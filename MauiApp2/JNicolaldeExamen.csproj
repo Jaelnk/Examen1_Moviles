@@ -76,4 +76,13 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="Views\RegistroPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	</ItemGroup>
+
 </Project>
