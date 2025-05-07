@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Views.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <!-- Título -->
+        <Label Text="Bienvenido"
+               TextColor="Red" FontSize="20"
+               HorizontalOptions="Center" />
+
+        <!-- Logo -->
+        <Image Source="logo.png"
+               HeightRequest="100"
+               HorizontalOptions="Center" />
+
+        <!-- Grid para Usuario y Contraseña -->
+        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,*">
+            <Label Text="Usuario:" Grid.Row="0" Grid.Column="0" />
+            <Entry x:Name="usuarioEntry" Grid.Row="0" Grid.Column="1" />
+            <Label Text="Contraseña:" Grid.Row="1" Grid.Column="0" />
+            <Entry x:Name="passwordEntry" IsPassword="True" Grid.Row="1" Grid.Column="1" />
+        </Grid>
+
+        <!-- Botón Iniciar Sesión -->
+        <Button Text="Iniciar Sesión"
+                Clicked="OnLoginClicked" />
+        
+    </VerticalStackLayout>
+</ContentPage>
