@@ -16,9 +16,9 @@
 
         <!-- Grid para Usuario y Contraseña -->
         <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,*">
-            <Label Text="Usuario:" Grid.Row="0" Grid.Column="0" />
-            <Entry x:Name="usuarioEntry" Grid.Row="0" Grid.Column="1" />
-            <Label Text="Contraseña:" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Usuario:" TextColor="Red" FontSize="20" Grid.Row="0" Grid.Column="0" />
+            <Entry x:Name="usuarioEntry" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Contraseña:" TextColor="Red" FontSize="20" Grid.Row="0" Grid.Column="1" />
             <Entry x:Name="passwordEntry" IsPassword="True" Grid.Row="1" Grid.Column="1" />
         </Grid>
 
